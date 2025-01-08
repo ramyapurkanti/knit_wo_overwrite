@@ -1,0 +1,15 @@
+---
+title: "Facy title"
+author: "Ramya purkanti"
+date: "Last compiled on `r format(Sys.time(), '%d %B %Y')`"
+output: 
+  html_document:
+    code_fold: hide
+    toc: true
+knit: (function(inputFile, encoding, ouputFile) { rmarkdown::render(inputFile, encoding=encoding, output_file = file.path(paste0(gsub(".Rmd", "_",inputFile), Sys.Date(), ".html"))) })
+---
+
+Trying out a different file name
+```{r}
+print("hello")
+```
